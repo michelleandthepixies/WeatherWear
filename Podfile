@@ -7,5 +7,6 @@ target 'WeatherWear' do
 
   # Pods for WeatherWear
 	pod ‘Parse’
+    pod 'AFNetworking'
 
 end
