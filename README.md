@@ -1,2 +1,2 @@
 # WeatherWear
-a new way to know the weather
+a new way to weather
