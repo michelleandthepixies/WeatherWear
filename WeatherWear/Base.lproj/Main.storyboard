@@ -79,7 +79,7 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="mua-vd-ZkH">
             <objects>
                 <viewController id="Bzb-CG-XJF" sceneMemberID="viewController">
@@ -90,13 +90,20 @@
                     <view key="view" contentMode="scaleToFill" id="gEH-A2-uDb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tYD-vi-2CO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mOh-Vi-IUN"/>
+                    <navigationItem key="navigationItem" title="Settings" id="mOh-Vi-IUN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OHY-oU-PVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2024.8" y="-544.67766116941539"/>
+            <point key="canvasLocation" x="2024.8" y="-545.57721139430294"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="g9I-UU-euO">
