@@ -6,7 +6,7 @@ target 'WeatherWear' do
   use_frameworks!
 
   # Pods for WeatherWear
-	pod ‘Parse’
+	pod 'Parse'
     pod 'AFNetworking'
 
 end

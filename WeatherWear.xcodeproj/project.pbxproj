@@ -13,6 +13,7 @@
 		4360A3811E8B108C0031757E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4360A37F1E8B108C0031757E /* Main.storyboard */; };
 		4360A3831E8B108C0031757E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4360A3821E8B108C0031757E /* Assets.xcassets */; };
 		4360A3861E8B108C0031757E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4360A3841E8B108C0031757E /* LaunchScreen.storyboard */; };
+		9071702E1E94633400CA73E2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9071702D1E94633400CA73E2 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4360A3871E8B108C0031757E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5939C53B425EF7C601EB50AA /* Pods_WeatherWear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherWear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6661FB35246857E443F2A99F /* Pods-WeatherWear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherWear.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherWear/Pods-WeatherWear.debug.xcconfig"; sourceTree = "<group>"; };
+		9071702D1E94633400CA73E2 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		4360A37A1E8B108C0031757E /* WeatherWear */ = {
 			isa = PBXGroup;
 			children = (
+				9071702C1E94632100CA73E2 /* VC */,
 				4360A37B1E8B108C0031757E /* AppDelegate.swift */,
 				4360A37D1E8B108C0031757E /* ViewController.swift */,
 				4360A37F1E8B108C0031757E /* Main.storyboard */,
@@ -77,6 +80,14 @@
 				5939C53B425EF7C601EB50AA /* Pods_WeatherWear.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9071702C1E94632100CA73E2 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				9071702D1E94633400CA73E2 /* SignInViewController.swift */,
+			);
+			name = VC;
 			sourceTree = "<group>";
 		};
 		CA48989A8546D9029C67CA2E /* Pods */ = {
@@ -214,6 +225,7 @@
 			files = (
 				4360A37E1E8B108C0031757E /* ViewController.swift in Sources */,
 				4360A37C1E8B108C0031757E /* AppDelegate.swift in Sources */,
+				9071702E1E94633400CA73E2 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +389,7 @@
 				4360A38C1E8B108C0031757E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
