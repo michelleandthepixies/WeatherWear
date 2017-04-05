@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BPx-9m-ehM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -49,7 +49,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSx-m7-bKx">
                                 <rect key="frame" x="0.0" y="487" width="375" height="36"/>
@@ -82,11 +82,11 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Odi-MC-Sf0" secondAttribute="trailing" id="5vu-0s-LbW"/>
                             <constraint firstItem="acW-8o-VUb" firstAttribute="top" secondItem="XNc-73-6W9" secondAttribute="bottom" constant="91.5" id="5xP-cB-d2Y"/>
+                            <constraint firstItem="XNc-73-6W9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="126" id="Aax-7s-bVs"/>
                             <constraint firstItem="sSx-m7-bKx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BKU-47-wm0"/>
                             <constraint firstItem="Odi-MC-Sf0" firstAttribute="top" secondItem="sSx-m7-bKx" secondAttribute="bottom" constant="8" id="FI1-23-vFC"/>
                             <constraint firstItem="1eb-FA-eFK" firstAttribute="top" secondItem="acW-8o-VUb" secondAttribute="bottom" constant="25" id="Fsm-lX-Q96"/>
                             <constraint firstAttribute="trailing" secondItem="sSx-m7-bKx" secondAttribute="trailing" id="Kgl-z8-J3t"/>
-                            <constraint firstItem="XNc-73-6W9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="126" id="M9z-0g-cia"/>
                             <constraint firstItem="acW-8o-VUb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OYZ-eC-Fd1"/>
                             <constraint firstItem="sSx-m7-bKx" firstAttribute="top" secondItem="1eb-FA-eFK" secondAttribute="bottom" constant="107" id="W6p-EY-HtB"/>
                             <constraint firstItem="Odi-MC-Sf0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bzS-4e-NSz"/>
@@ -97,7 +97,7 @@
                     <connections>
                         <outlet property="passwordField" destination="1eb-FA-eFK" id="3m4-FX-A8S"/>
                         <outlet property="userField" destination="acW-8o-VUb" id="Wb7-eo-MYe"/>
-                        <segue destination="BPx-9m-ehM" kind="presentation" id="8ay-h1-tTJ"/>
+                        <segue destination="BPx-9m-ehM" kind="presentation" identifier="homeSegue" id="8ay-h1-tTJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

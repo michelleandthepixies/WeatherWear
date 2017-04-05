@@ -29,6 +29,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         )
         
+        /*
+        if PFUser.current() != nil {
+            print("There is a current user!")
+            window = UIWindow(frame: UIScreen.main.bounds)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let tabBarController = storyboard.instantiateViewController(withIdentifier: "HomeController")
+            window?.rootViewController = tabBarController
+            window?.makeKeyAndVisible()
+        } else {
+            print ("No current user")
+        }
+ */
+        
         return true
     }
 
