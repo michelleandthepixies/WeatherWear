@@ -8,5 +8,6 @@ target 'WeatherWear' do
   # Pods for WeatherWear
 	pod 'Parse'
     pod 'AFNetworking'
+    pod 'BDBOAuth1Manager'
 
 end
