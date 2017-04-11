@@ -303,10 +303,10 @@
             </objects>
             <point key="canvasLocation" x="1125.5999999999999" y="115.59220389805098"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="JsX-x8-IBz">
             <objects>
-                <viewController id="viy-wz-c4W" sceneMemberID="viewController">
+                <viewController id="viy-wz-c4W" customClass="ProfileViewController" customModule="WeatherWear" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="76t-QV-fhC"/>
                         <viewControllerLayoutGuide type="bottom" id="BFU-5J-AWr"/>
@@ -336,7 +336,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="H4Z-ua-z4C"/>
+                    <navigationItem key="navigationItem" id="H4Z-ua-z4C">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="WjZ-Y1-osT">
+                            <connections>
+                                <action selector="onBack:" destination="viy-wz-c4W" id="gRr-wA-vuq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzQ-Cb-QUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
