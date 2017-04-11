@@ -29,6 +29,32 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     var user: PFUser?
     var settings: NSDictionary?
     
+    //Initialize API call, and set up main screen
+    override func viewWillAppear(_ animated: Bool) {
+        
+        var temperature: Int;
+        
+        
+        /*******************
+        //API call goes here
+        *******************/
+        
+        
+        if (temperature <= 50) {
+            //coat
+        }
+        
+        if (temperature > 50 && temperature <= 60) {
+            //hoodie
+        }
+        
+        if (temperature > 60) {
+            //shirt
+        }
+        
+        
+        
+    }
     
     // Need to initialize a default setting page
     override func viewDidLoad() {
