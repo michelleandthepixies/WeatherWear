@@ -11,6 +11,19 @@ import CoreLocation
 import Parse
 
 class MainViewController: UIViewController, CLLocationManagerDelegate {
+    
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    
+    @IBOutlet weak var weatherImageView: UIImageView!
+    @IBOutlet weak var weatherLabel: UILabel!
+    
+    @IBOutlet weak var clothingImageView: UIImageView!
+    @IBOutlet weak var clothingLabel: UILabel!
+    
+    @IBOutlet weak var dayLabel: UILabel!
+    
+    
     var locationManager : CLLocationManager!
     var location : [CLLocation]?
     var user: PFUser?
@@ -31,15 +44,12 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.distanceFilter = 200
         locationManager.requestWhenInUseAuthorization()
-
-        // Do any additional setup after loading the view.
         
     }
     
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func setFirstTime() {
