@@ -33,24 +33,29 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         
         var temperature: Int;
+        var weather: String;
         
         
         /*******************
         //API call goes here
         *******************/
         
-        
-        if (temperature <= 50) {
-            //coat
+        if (weather == 'sunny') {
+            
+            //logic not correct but u get the idea
+            if (temperature <= 50) {
+                //coat
+            }
+            
+            if (temperature > 50 && temperature <= 60) {
+                //hoodie
+            }
+            
+            if (temperature > 60) {
+                //shirt
+            }
         }
-        
-        if (temperature > 50 && temperature <= 60) {
-            //hoodie
-        }
-        
-        if (temperature > 60) {
-            //shirt
-        }
+        //and so on...
         
         
         
