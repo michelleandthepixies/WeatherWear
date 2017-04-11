@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		12F3168B5718DA75C4716C5F /* Pods_WeatherWear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5939C53B425EF7C601EB50AA /* Pods_WeatherWear.framework */; };
 		2257286D1E9708200088D64A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2257286C1E9708200088D64A /* MainViewController.swift */; };
+		433B1CE11E9D851900F7E856 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433B1CE01E9D851900F7E856 /* SettingsTableViewController.swift */; };
 		4360A37C1E8B108C0031757E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4360A37B1E8B108C0031757E /* AppDelegate.swift */; };
 		4360A37E1E8B108C0031757E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4360A37D1E8B108C0031757E /* ViewController.swift */; };
 		4360A3811E8B108C0031757E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4360A37F1E8B108C0031757E /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		2257286C1E9708200088D64A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3AD9CD3FF5F66EAE7F9A74A6 /* Pods-WeatherWear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherWear.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherWear/Pods-WeatherWear.release.xcconfig"; sourceTree = "<group>"; };
+		433B1CE01E9D851900F7E856 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		4360A3781E8B108C0031757E /* WeatherWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4360A37B1E8B108C0031757E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4360A37D1E8B108C0031757E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				2257286C1E9708200088D64A /* MainViewController.swift */,
 				9071702D1E94633400CA73E2 /* SignInViewController.swift */,
+				433B1CE01E9D851900F7E856 /* SettingsTableViewController.swift */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			files = (
 				4360A37E1E8B108C0031757E /* ViewController.swift in Sources */,
 				9046252D1E970BAD00805DDD /* OpenWeatherAPI.swift in Sources */,
+				433B1CE11E9D851900F7E856 /* SettingsTableViewController.swift in Sources */,
 				4360A37C1E8B108C0031757E /* AppDelegate.swift in Sources */,
 				9071702E1E94633400CA73E2 /* SignInViewController.swift in Sources */,
 				2257286D1E9708200088D64A /* MainViewController.swift in Sources */,
