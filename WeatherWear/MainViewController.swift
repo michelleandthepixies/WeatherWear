@@ -32,6 +32,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     //Initialize API call, and set up main screen
     override func viewWillAppear(_ animated: Bool) {
         
+        /**
         var temperature: Int;
         var weather: String;
         
@@ -57,7 +58,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         }
         //and so on...
         
-        
+        */
         
     }
     
