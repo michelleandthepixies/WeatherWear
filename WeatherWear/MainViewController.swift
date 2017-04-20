@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 import Parse
+import Foundation
 
 class MainViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -25,24 +26,20 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     
     
     var locationManager : CLLocationManager!
-    var location : [CLLocation]?
     var user: PFUser?
     var settings: NSDictionary?
     
     //Initialize API call, and set up main screen
     override func viewWillAppear(_ animated: Bool) {
         
-        /**
-        var temperature: Int;
-        var weather: String;
+        /*
+        var temperature: Int
+        var weather: String
         
-        
-        /*******************
-        //API call goes here
-        *******************/
+
         
         if (weather == 'sunny') {
-            
+         
             //logic not correct but u get the idea
             if (temperature <= 50) {
                 //coat
@@ -77,6 +74,17 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.distanceFilter = 200
         locationManager.requestWhenInUseAuthorization()
         
+        
+        let weather = WeatherGetter();
+        
+        let latitude:Double = (locationManager.location!.coordinate.latitude).roundTo(places: 4)
+        let longitude:Double = (locationManager.location!.coordinate.longitude).roundTo(places: 4)
+        
+        print("LATITUDE: \(latitude)")
+        print("LONGITUDE: \(longitude)")
+        weather.getWeather(lat: latitude, lon: longitude);
+        
+        
     }
     
 
@@ -100,4 +108,18 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            print(location)
+        }
+    }
+    
+}
+
+extension Double {
+    /// Rounds the double to decimal places value
+    func roundTo(places:Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return (self * divisor).rounded() / divisor
+    }
 }
