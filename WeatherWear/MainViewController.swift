@@ -86,7 +86,11 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         
         weather.getWeather(success: { (weather) in
             self.weather = weather
-            print(self.weather)
+            print(weather)
+            let description = weather.value(forKeyPath: "weather") as! NSArray
+            let weatherDictionary = description[0] as! NSDictionary
+            self.weatherLabel.text = weatherDictionary.value(forKeyPath: "description") as? String
+            
         }, failure: { (error) in
             print(error.localizedDescription)
         }, lat: latitude, lon: longitude)
