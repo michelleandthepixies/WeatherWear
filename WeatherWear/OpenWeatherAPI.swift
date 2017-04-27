@@ -28,9 +28,16 @@ class WeatherGetter {
                 print("Error:\n\(error)")
             }
             else {
-                let dataString = String(data: data!, encoding: String.Encoding.utf8)
-                print("JSON data:\n\(dataString!)")
-                //return data["name"]
+                do {
+                    let weather = try JSONSerialization.jsonObject(
+                        with: data!,
+                        options: .mutableContainers) as! [String: AnyObject]
+                    print("\(weather["name"]!)")
+                }
+                catch let jsonError as NSError {
+                    // An error occurred while trying to convert the data into a Swift dictionary.
+                    print("JSON error description: \(jsonError.description)")
+                }
             }
         }
         dataTask.resume()
