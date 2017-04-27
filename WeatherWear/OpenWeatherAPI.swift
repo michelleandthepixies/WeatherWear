@@ -35,7 +35,6 @@ class WeatherGetter {
                     print("\(weather["name"]!)")
                 }
                 catch let jsonError as NSError {
-                    // An error occurred while trying to convert the data into a Swift dictionary.
                     print("JSON error description: \(jsonError.description)")
                 }
             }
