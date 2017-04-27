@@ -28,6 +28,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
     var locationManager : CLLocationManager!
     var user: PFUser?
     var settings: NSDictionary?
+    var weather: NSDictionary?
     
     //Initialize API call, and set up main screen
     override func viewWillAppear(_ animated: Bool) {
@@ -82,8 +83,13 @@ class MainViewController: UIViewController, CLLocationManagerDelegate {
         
         print("LATITUDE: \(latitude)")
         print("LONGITUDE: \(longitude)")
-        weather.getWeather(lat: latitude, lon: longitude);
         
+        weather.getWeather(success: { (weather) in
+            self.weather = weather
+            print(self.weather)
+        }, failure: { (error) in
+            print(error.localizedDescription)
+        }, lat: latitude, lon: longitude)
         
     }
     
